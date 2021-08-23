@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+.container .head{
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    z-index: 1000000;
+    box-shadow: 0 2px 6px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 10%);
+    
+}
+
+.container .head img{
+    width: 5%;
+    padding-left: 83px;
+    padding-top: 2px;
+    
+}
+
+.container .head .lang select{
+    padding:25px 30px;
+    font-weight: 700;
+    font-size: 1rem;
+    border-right: 0.5px solid rgb(219, 219, 219);
+    border-left: 0.5px solid rgb(219, 219, 219);
+    border-top: 0px;
+    border-bottom: 0px;
+    outline: 0;
+}
+
+
+.container .head .lang a{
+    padding:25px 20px;
+    color: black;
+    text-decoration: none;
+    margin-right: 65px;
+    font-weight: 700;
+    
+}
+.container .head select:hover{
+    background-color:rgb(219, 219, 219);
+    
+}
+.container .head a:hover{
+    background-color:rgb(219, 219, 219);
+    
+}
+
+.banner{
+    margin-top: 70px;
+    height: 250px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #d2154f;
+}
+
+.banner::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(to left, #dd273c, transparent);
+}
+
+.banner .box{
+    z-index: 1000;
+}
+
+.banner .box .heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner .box .heading h1{
+    font-weight: 800;
+    font-size: 33px;
+    color: #fff;
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+
+.banner .box .search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.banner .box .search input{
+    font-size: 16px;
+    border: 1px solid #8c8c8c;
+    outline: none;
+    color: #000;
+    box-shadow: none;
+    padding: 10px 10px;
+    min-width: 150%;
+    height: 35px;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+
+.banner .box .search a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #1ab64f;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+    line-height: 35px;
+    text-align: center;
+    height: 35px;
+    min-width: 150px;
+    padding: 11px 10px;
+
+}
+
+.banner .box .search a:hover{
+    background: #108035;
+    transition: 0.4s;
+}
+
+.banner .box .search1{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    align-items: center;
+    margin-left: -15.2rem;
+}
+
+.banner .box .search1 h4{
+    color:#fff;
+    padding-right: 25px;
+    font-weight: 500;
+}
+
+.banner .box .search1 a{
+    color:#fff;
+    border: #fff;
+    border-style: solid;
+    border-radius: 3px;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    border-width: 2px;
+}
+
+.banner .box .search1 a:hover{
+    background-color: #6d0524;
+}
+
+.offer .fit{
+    width: 90%;
+    position: relative;
+    top: 0;
+    padding-top: 50px;
+    padding-left: 75px;
+
+}
+
+.smallbanner{
+    border-style: solid;
+    border-width: 1.5px;
+    border-radius: 5px;
+    margin: 75px;
+    border-color: rgb(219, 219, 219);
+    margin-top: 50px;
+    height: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+.smallbanner .box .search{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+
+.smallbanner .box .search img{
+    width: 6%;
+}
+
+.smallbanner .box .search .talk{
+    padding-left: 15px;
+    padding-right: 420px;
+    font-size: 1.05rem;
+}
+
+.smallbanner .box .search .talk p{
+    font-size: 1.022rem;
+    color: rgb(112, 112, 112);
+}
+
+.smallbanner .box .search input{
+    font-size: 16px;
+    border: 1px solid #cfcfcf;
+    padding: 10px 10px;
+    margin-right: 20px;
+    height: 25px;
+    align-items: center;
+    border-radius: 5px;
+    min-width: 300px;
+
+}
+
+.smallbanner .box .search a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    background: #ee2a24;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+    text-align: center;
+    line-height: 25px;
+    min-width: 120px;
+    padding: 11px 10px;
+    margin-right: 60px;
+
+}
+
+.map{
+    background-color: #f3f5f7;
+    display: flex;
+    flex-direction: row;
+    padding: 40px 15px ;
+}
+
+.map img{
+    width: 45%;
+}
+
+.map .maptalk{
+    padding: 40px 55px;
+}
+
+.map .maptalk h2{
+    padding-bottom: 25px;
+    font-size: 1.65rem;
+}
+
+.map1{
+    display: flex;
+    flex-direction: row;
+}
+
+.map1 .maptalk0{
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    padding: 5px;
+    padding-left: 0px;
+    padding-right: 30px;
+    margin-left: 0px;
+}
+
+.map1 .maptalk0 h1{
+    font-size: 2rem;
+}
+
+.map1 .maptalk1{
+    align-items: center;
+    margin-top: 25px;
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    border-left: 1px solid #000;
+}
+.map1 .maptalk1 h1{
+    font-size: 2rem;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.footer .one{
+    display: flex;
+    flex-direction: c;
+    justify-content: space-between;
+    margin: auto;
+    width: 25%;
+}
+
+.footer .one li{
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-right: 160px;
+}
+
+.footer .one .items li a{
+    text-decoration: none;
+    font-weight: 700;
+    color: rgb(100, 100, 100);
+}
+
+.footer .one .items li a:hover{
+    color: rgb(32, 32, 32);
+}
+
+.map .maptalk .footer .one ul {
+    list-style: none;
+}
+.map .maptalk .footer .one ul li::before{
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: red; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -2em; /* Also needed for space (tweak if needed) */
+}
+
+.footer1{
+    background-color: #6D787D;
+    height: 100%;
+    
+}
+
+.footer1 .box .search{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    color: #fff;
+    
+}
+.footer1 .box .search img{
+    width: 6.5%;
+    padding-left: 65px;
+}
+
+.footer1 .box .search a{
+    text-decoration: none;
+    color: #6D787D;
+    font-weight: 600;
+    border-radius: 5px;
+    background: #ffffff;
+    text-align: center;
+    line-height: 25px;
+    min-width: 180px;
+    padding: 11px 0px;
+    margin-right: 60px;
+    font-size: 13px;
+}
+
+.footer1 .box .search5{
+    border-bottom: 1px solid #fff;
+    margin: 0 70px;
+    padding: 30px;
+}
+
+.search5 .download {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.search5 .download .getiton{
+    padding: 20px;
+    color: #fff;
+    border-right: 1px solid rgb(255, 255, 255);
+    width: 38%;
+}
+
+.search5 .download .getiton p{
+    font-size: .9rem;
+}
+.search5 .download .getiton img{
+    padding-top: 20px;
+    width: 30%;
+}
+
+
+.search5 .download .footer .one{
+    width: 100%;
+    margin-right: 60px;
+    margin-top: 5px;
+}
+
+.search5 .download .footer .one ul {
+    list-style: none;
+}
+.search5 .download .footer .one li{
+    padding-right: 0px;
+    padding-bottom: 15px;
+    padding-top: 0px;
+    padding-left: 0px;
+}
+
+
+.search5 .download .footer .one .items li a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: .9rem;
+    color: rgb(255, 255, 255);
+}
+
+.search5 .download .footer .one .items li a:hover{
+    border-bottom: 1px solid #fff;
+}
+
+.search5 .townhouse{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.search5 .townhouse .thouse{
+    text-align: center;
+    color: white;
+}
+
+.search5 .townhouse .thouse h3{
+    padding-bottom: 8px;
+}
+
+.search5 h3{
+    color: white;
+}
+
+.search5 .download .footer .one .items1 li a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: .9rem;
+    color: rgb(255, 255, 255);
+}
+
+.search5 .download .footer .one .items1 li a:hover{
+    border-bottom: 1px solid #fff;
+}
+
+.search5 .showcase{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(185, 185, 185);
+    justify-content: space-between;
+    margin-right: -1.5rem;
+}
+
+.search5 .showcase .social{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    margin-left: -1.5rem;
+}
+
+.search5 .showcase .social li a{
+    display: inline-block;
+    margin-right: 10px;
+    transform: scale(0.5);
+    
+}
+
+
+.search5 .showcase .social li a:hover{
+    transform: scale(0.5) translateY(-15px);
+}
+
