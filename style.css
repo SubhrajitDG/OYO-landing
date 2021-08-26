@@ -517,6 +517,8 @@
 
 @media screen and (max-width: 496px){
 
+    
+
     .container .head{
         width: 100%;
     }
@@ -530,6 +532,11 @@
     .container .head .lang select{
         padding:25px 30px;
         font-size: 0.9rem;
+    }
+
+    .container .head select:hover{
+        background-color:rgb(255, 255, 255);
+        
     }
     
     
@@ -606,6 +613,7 @@
         margin-top: 0px;
         margin-left: 0px;
         margin-right: 0px;
+        width: 80%;
     }
     
     .smallbanner .box .leftalign a{
