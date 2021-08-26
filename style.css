@@ -80,6 +80,7 @@
 
 .banner .box{
     z-index: 1000;
+    width: 75%;
 }
 
 .banner .box .heading{
@@ -113,7 +114,7 @@
     color: #000;
     box-shadow: none;
     padding: 10px 10px;
-    min-width: 150%;
+    width: 100%;
     height: 35px;
     align-items: center;
     border-top-left-radius: 5px;
@@ -147,7 +148,7 @@
     flex-direction: row;
     margin-top: 25px;
     align-items: center;
-    margin-left: -15.2rem;
+    /* margin-left: -15.2rem; */
 }
 
 .banner .box .search1 h4{
@@ -188,31 +189,37 @@
     margin: 75px;
     border-color: rgb(219, 219, 219);
     margin-top: 50px;
-    height: 100px;
     position: relative;
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    align-items: center;
+}
+
+.smallbanner .box{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
 
 .smallbanner .box .search{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     width: 100%;
     align-items: center;
     margin-top: 20px;
+    margin-bottom: 20px;
     
 }
 
 .smallbanner .box .search img{
-    width: 6%;
+    width: 12%;
+    padding-left: 15px;
 }
 
 .smallbanner .box .search .talk{
     padding-left: 15px;
-    padding-right: 420px;
     font-size: 1.05rem;
 }
 
@@ -221,7 +228,17 @@
     color: rgb(112, 112, 112);
 }
 
-.smallbanner .box .search input{
+.smallbanner .box .leftalign{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: flex-end;
+}
+
+.smallbanner .box .leftalign input{
     font-size: 16px;
     border: 1px solid #cfcfcf;
     padding: 10px 10px;
@@ -233,7 +250,7 @@
 
 }
 
-.smallbanner .box .search a{
+.smallbanner .box .leftalign a{
     text-decoration: none;
     color: #fff;
     font-weight: 600;
@@ -260,7 +277,9 @@
 }
 
 .map .maptalk{
-    padding: 40px 55px;
+    padding: 40px;
+    padding-left:55px;
+    width: 100%;
 }
 
 .map .maptalk h2{
@@ -492,5 +511,259 @@
 
 .search5 .showcase .social li a:hover{
     transform: scale(0.5) translateY(-15px);
+    transition: 0.3s;
 }
 
+
+@media screen and (max-width: 496px){
+
+    .container .head{
+        width: 100%;
+    }
+
+    .container .head img{
+        width: 15%;
+        padding-left: 40px;
+        
+    }
+
+    .container .head .lang select{
+        padding:25px 30px;
+        font-size: 0.9rem;
+    }
+    
+    
+    .container .head .lang a{
+        padding:25px 20px;
+        color: black;
+        text-decoration: none;
+        margin-right: 0px;
+        font-size: 0.9rem;
+        
+    }
+
+    .banner{
+        height: 290px;
+    }
+
+    .banner .box .search1{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        align-items: center;
+    }
+
+    .banner .box .search1 h4{
+        padding-bottom: 10px;
+        padding-right: 0px;
+    }
+
+    .banner .box .search input{
+        font-size: 12px;
+        height: 15px;
+        align-items: center;
+    
+    }
+    
+    .banner .box .search a{
+        line-height: 15px;
+        height: 15px;
+        min-width: 100px;
+        font-size: 15px;
+    
+    }
+
+    .offer .fit{
+        width: 95%;
+        padding-top: 20px;
+        padding-left: 20px;
+    
+    }
+
+    .smallbanner{
+        margin: 15px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .smallbanner .box{
+        display: flex;
+        flex-direction: column;  
+    }
+
+    .smallbanner .box .search img{
+        width: 20%;   
+    }
+
+    .smallbanner .box .leftalign{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px; 
+    }
+
+    .smallbanner .box .leftalign input{
+        margin-bottom: 10px;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .smallbanner .box .leftalign a{
+        margin: 0 0 0 0;
+        padding: 5px 0 5px 0;
+    }
+
+    .map{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .map img{
+        width: 100%;
+    }
+
+    .map .maptalk{
+        padding-left:0px;
+        padding-right: 0px;
+        width: 100%;
+    }
+
+    .map .maptalk h2{
+        text-align: center;
+    }
+
+    .map .maptalk p{
+        text-align: center;
+    }
+
+    .map1{
+        justify-content: center;
+    }
+
+    .map .maptalk0{
+        text-align: center;
+        padding-left: 30px;
+    }
+
+    .map .maptalk1{
+        text-align: center;
+    }
+
+    .map1 .maptalk0 h1{
+        font-size: 1.5rem;
+    }
+
+    .map1 .maptalk1 h1{
+        font-size: 1.5rem;
+    }
+
+    .map1 .maptalk0 p{
+        font-size: 0.918rem;
+    }
+
+    .map1 .maptalk1 p{
+        font-size: 0.918rem;
+    }
+
+    .footer .one li{
+        padding-top: 20px;
+        padding-bottom: 0px;
+        padding-left: 40px;
+        padding-right: 0px;
+    }
+
+    .footer1 .box .search{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer1 .box .search img{
+        width: 20%;
+        padding-left: 0px;
+    }
+
+    .footer1 .box .search h2{
+        font-size: 1.4rem;
+        padding-bottom: 10px;
+    }
+
+    .footer1 .box .search a{
+        margin: 0 0 0 0;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        margin-bottom: 6px;
+    }
+
+    .footer1 .box .search5{
+        margin: 0 25px;
+        padding: 20px 0 20px 0;
+    }
+
+    .search5 .download .getiton{
+        padding: 20px 0 20px 0;
+    }
+    
+    .search5 .download .getiton p{
+        font-size: 0.5rem;
+        padding-bottom: 10px;
+    }
+    .search5 .download .getiton img{
+        padding-top: 0px;
+        width: 60%;
+    }
+    
+    
+    .search5 .download .footer .one{
+        margin-right: 0px;
+    }
+    
+    .search5 .download .footer .one li{
+        padding-bottom: 5px;
+    }
+    
+    
+    .search5 .download .footer .one .items li a{
+        font-size: 0.5rem;
+    }
+    
+    .search5 .townhouse .thouse h3{
+        padding-bottom: 8px;
+        font-size: 0.81rem;
+    }
+
+    .search5 .townhouse .thouse h5{
+        font-size: 0.6rem;
+    }
+
+    .search5 h3{
+        font-size: 0.9rem;
+    }
+
+    .search5 .download .footer .one .items1 li a{
+        font-size: .4rem;
+    }
+    
+    .search5 .showcase .social{
+        margin-left: 0rem;
+    }
+    
+    .search5 .showcase .social li a{
+        margin-right: 0px;
+        
+    }
+
+    .search5 .showcase .social li a img{
+        width: 70%;
+        
+    }
+
+    .search5 .showcase h5{
+        font-size: 0.8rem;
+        padding-right: 30px;
+        
+    }
+    
+}
